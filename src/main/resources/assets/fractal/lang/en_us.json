@@ -1,0 +1,6 @@
+{
+    "fractal.chat.invalid_palette": "Palette not found: %s",
+    "fractal.chat.invalid_block": "Invalid block: %s",
+    "fractal.chat.palettes_heading": "PALETTES",
+    "fractal.chat.block_message": "%s %s"
+}
