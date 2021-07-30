@@ -6,9 +6,7 @@ import com.mojang.brigadier.context.CommandContext;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.*;
 import net.minecraft.world.entity.player.Player;
 
 import java.util.ArrayList;
@@ -25,7 +23,11 @@ public class CommandPalettes {
         components.add(new TranslatableComponent("fractal.chat.palettes_heading")
                 .withStyle(ChatFormatting.AQUA)
                 .withStyle(ChatFormatting.UNDERLINE)
-                .withStyle(ChatFormatting.BOLD));
+                .withStyle(ChatFormatting.BOLD)
+                .withStyle(Style.EMPTY.withHoverEvent(new HoverEvent(
+                        HoverEvent.Action.SHOW_TEXT,
+                        new TextComponent("./" + Config.CONFIG_FILE).withStyle(ChatFormatting.ITALIC))))
+                .withStyle(Style.EMPTY.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_FILE, Config.CONFIG_FILE))));
 
         int n = 0;
         for (String paletteName : palettes.keySet()) {

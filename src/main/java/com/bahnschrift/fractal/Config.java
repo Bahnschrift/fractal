@@ -13,23 +13,23 @@ import java.util.Map;
 
 
 public class Config {
-    private static final String FILE_NAME = "config/fractal-palettes.json";
+    public static final String CONFIG_FILE = "config/fractal-palettes.json";
     private static final String DEFAULT_FILE =
             """
 {
-  "palettes": {
-    "default": [
-      "minecraft:black_stained_glass",
-      "minecraft:gray_stained_glass",
-      "minecraft:purple_stained_glass",
-      "minecraft:red_stained_glass",
-      "minecraft:orange_stained_glass",
-      "minecraft:lime_stained_glass",
-      "minecraft:green_stained_glass",
-      "minecraft:blue_stained_glass",
-      "minecraft:light_blue_stained_glass",
-      "minecraft:light_gray_stained_glass",
-      "minecraft:air"
+    "palettes": {
+        "default": [
+            "minecraft:black_stained_glass",
+            "minecraft:gray_stained_glass",
+            "minecraft:purple_stained_glass",
+            "minecraft:red_stained_glass",
+            "minecraft:orange_stained_glass",
+            "minecraft:lime_stained_glass",
+            "minecraft:green_stained_glass",
+            "minecraft:blue_stained_glass",
+            "minecraft:light_blue_stained_glass",
+            "minecraft:light_gray_stained_glass",
+            "minecraft:air"
     ]
   }
 }
@@ -37,7 +37,7 @@ public class Config {
 
     public static HashMap<String, ArrayList<String>> get() {
         JsonParser parser = new JsonParser();
-        File configFile = new File(FILE_NAME);
+        File configFile = new File(CONFIG_FILE);
         JsonObject palettesJson = (JsonObject) parser.parse(DEFAULT_FILE);
 
         try {

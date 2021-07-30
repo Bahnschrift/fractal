@@ -1,16 +1,19 @@
-# Fractal-Generator
-Minecraft mod for generating 3D fractals with a single command.
+# Fractal
+A Minecraft mod for generating 3D fractals with a single command.
 
 ![Mandelbox Scale -3](https://i.imgur.com/5IuT1RH.png)
 
 ## Command Usage
 **/fractal palettes**
+
 Prints the current block palettes as defined in fractal-palettes.json.
 
 **/fractal mandelbox <loc1> <loc2> [palette] [scale]**
+
 Generates a [mandelbox](https://en.wikipedia.org/wiki/Mandelbox) fractal between loc1 and loc2 with a specified palette. Scale, which defaults to -3, significantly changes the generation of the fractal.
 
 **/fractal mandelbulb <loc1> <loc2> [palette] [A] [B] [C] [D]**
+
 Generates a [mandelbulb](https://en.wikipedia.org/wiki/Mandelbulb) fractal between loc1 and loc2 with a specified palette using the quintic formula. A, B, C and D are constants that effect the generation of the fractal.
 
 
