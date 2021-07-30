@@ -13,7 +13,7 @@ import java.util.Map;
 
 
 public class Config {
-    private static final String FILENAME = "config/fractal-palettes.json";
+    private static final String FILE_NAME = "config/fractal-palettes.json";
     private static final String DEFAULT_FILE =
             """
 {
@@ -37,7 +37,7 @@ public class Config {
 
     public static HashMap<String, ArrayList<String>> get() {
         JsonParser parser = new JsonParser();
-        File configFile = new File(FILENAME);
+        File configFile = new File(FILE_NAME);
         JsonObject palettesJson = (JsonObject) parser.parse(DEFAULT_FILE);
 
         try {
