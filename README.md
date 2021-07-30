@@ -1,7 +1,7 @@
 # Fractal-Generator
 Minecraft mod for generating 3D fractals with a single command.
 
-![Mandelbox Scale -3](https://media.forgecdn.net/attachments/383/896/mandelbox-scale-3-2.png)
+![Mandelbox Scale -3](https://i.imgur.com/5IuT1RH.png)
 
 ## Command Usage
 **/fractal palettes**
