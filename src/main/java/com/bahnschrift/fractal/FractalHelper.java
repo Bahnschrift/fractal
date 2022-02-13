@@ -46,7 +46,6 @@ public class FractalHelper {
 
             palette = new ArrayList<>();
             for (String blockName : palettes.get(paletteArg)) {
-                Main.LOGGER.info("Adding " + blockName);
                 ResourceLocation loc = new ResourceLocation(blockName);
 
                 if (!ForgeRegistries.BLOCKS.containsKey(loc)) {
