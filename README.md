@@ -49,5 +49,5 @@ Block palettes can be configured with config/fractal-palettes.json. To add a new
             "minecraft:air"
         ]
     }
-} 
+}
 ```
